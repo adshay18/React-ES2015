@@ -6,9 +6,7 @@ const choice = (items) => {
 
 const remove = (items, item) => {
 	if (items.includes(item)) {
-		return items.filter(function(el) {
-			return el != item;
-		});
+		items.splice(items[item], 1);
 	} else {
 		return undefined;
 	}

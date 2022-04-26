@@ -7,5 +7,5 @@ console.log(items);
 let randomFruit = choice(items);
 console.log(`I'd like one ${randomFruit}, please.`);
 console.log(`Here you go: ${randomFruit}`);
-items.pop();
-console.log(items);
+remove(items, randomFruit);
+console.log(items.includes(randomFruit));
